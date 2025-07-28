@@ -177,7 +177,7 @@
 
 
     <div class="container">
-        <h1 id="questionText">Emily Yeva Covarrubias-Hernandez, will you be my girlfriend, properly this time? ✨💖</h1>
+        <h1 id="questionText">Emily Yeva Covarrubias-Hernandez, will you be my girlfriend, properly this time? 💐</h1>
         <div class="button-group">
             <button id="yesBtn" class="btn btn-yes">Yes! ❤️</button>
             <button id="noBtn" class="btn btn-no">No</button>
@@ -208,8 +208,8 @@
 
         // Event listener for the "Yes" button
         yesBtn.addEventListener('click', () => {
-            questionText.textContent = "YES! I love you so much, Emily! ❤️💖✨";
-            showMessage("You just made me the happiest person alive! Let's make this the best relationship ever! 🎉🥰", '#4CAF50');
+            questionText.textContent = "YAYYYY! I love you so much, Emily! ❤️";
+            showMessage("You just made me the happiest person alive (for the second time 😭) 🎉", '#4CAF50');
             buttonGroup.classList.add('hidden'); // Hide buttons
             // Optional: Add confetti or other celebratory effects here
         });
@@ -222,14 +222,14 @@
                 noBtn.textContent = "Are you sure? 🤔";
                 yesBtn.style.transform = 'scale(1.1)'; // Make Yes button slightly larger
                 yesBtn.style.boxShadow = '0 10px 20px rgba(76, 175, 80, 0.4)';
-                showMessage("Please don't say no! I want to do this right this time! 🥺", '#f44336');
+                showMessage("dont be a hater 💔", '#f44336');
             } else if (noClickCount === 2) {
                 noBtn.textContent = "Really, really sure? 😢";
                 // Make No button smaller and move it randomly
                 noBtn.style.fontSize = '1.2rem';
                 noBtn.style.padding = '0.7rem 1.5rem';
                 moveNoButtonRandomly();
-                showMessage("Come on, let's make up for the last time! 🙏", '#d35400');
+                showMessage("Come onnnnnn", '#d35400');
             } else if (noClickCount === maxNoClicks) {
                 noBtn.textContent = "Last chance? 💔";
                 // Make No button even smaller and move it more aggressively
@@ -240,8 +240,8 @@
             } else if (noClickCount > maxNoClicks) {
                 // After max clicks, make the No button disappear
                 noBtn.classList.add('hidden');
-                questionText.textContent = "There's only one right answer, Emily! 😉💖";
-                showMessage("Looks like the 'No' option isn't available anymore! Just kidding... (mostly). Please say Yes! 🥰", '#2980b9');
+                questionText.textContent = "There's only one right answer 😉";
+                showMessage("Looks like the 'No' option isn't available anymore. Just playing... (mostly). just say yes already", '#2980b9');
                 yesBtn.style.transform = 'scale(1.2)'; // Make Yes button even larger
                 yesBtn.style.boxShadow = '0 15px 25px rgba(76, 175, 80, 0.6)';
             }
